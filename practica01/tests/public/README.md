@@ -26,7 +26,3 @@ Los diagnósticos operativos no deben mezclarse con la secuencia de tokens en `s
 | `p8_error_character.mc` | `ERROR` y recuperación. |
 | `p9_negative_number.mc` | Separación entre `MINUS` e `INTEGER`. |
 | `p10_mixed_basic.mc` | Combinación básica en varias líneas. |
-
-## Alcance
-
-Estas pruebas son públicas y mínimas. Cada equipo debe incluir sus propias pruebas. Durante la evaluación podrán utilizarse casos adicionales que respeten la especificación.

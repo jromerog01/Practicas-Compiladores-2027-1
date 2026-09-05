@@ -21,17 +21,19 @@ clean:
 test: $(TARGET)
 	@fail=0; \
 	shopt -s nullglob; \
-	for f in tests/public/inputs/*.mc; do \
-		base=$$(basename "$$f" .mc); \
-		exp="tests/public/expected/$$base.out"; \
-		if [ -f "$$exp" ]; then \
-			out=$$(./$(TARGET) "$$f"); \
-			if [ "$$out" = "$$(cat "$$exp")" ]; then \
-				echo "PASS: $$f"; \
-			else \
-				echo "FAIL: $$f"; \
-				fail=1; \
+	for dir in tests/propias tests/public; do \
+		for f in "$$dir"/inputs/*.mc; do \
+			base=$$(basename "$$f" .mc); \
+			exp="$$dir/expected/$$base.out"; \
+			if [ -f "$$exp" ]; then \
+				out=$$(./$(TARGET) "$$f"); \
+				if [ "$$out" = "$$(cat "$$exp")" ]; then \
+					echo "PASS: $$f"; \
+				else \
+					echo "FAIL: $$f"; \
+					fail=1; \
+				fi; \
 			fi; \
-		fi; \
+		done; \
 	done; \
 	if [ $$fail -eq 0 ]; then echo "Todas las pruebas pasaron (o no hay pruebas aun)."; else exit 1; fi

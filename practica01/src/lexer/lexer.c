@@ -1,4 +1,5 @@
 #include "lexer/lexer.h"
+#include "lexer/token.h"
 
 #include <stdio.h>
 
@@ -11,9 +12,39 @@ int simple_token_type(int c, TokenType *type) {
         case '+':
             *type = PLUS;
             return 1;
-
-        /* TODO: agregar los demás símbolos simples de la práctica. */
-
+        case '-':
+            *type = MINUS;
+            return 1;
+        case '*':
+            *type = STAR;
+            return 1;
+        case '/':
+            *type = SLASH;
+            return 1;
+        case '=':
+            *type = ASSIGN;
+            return 1;
+        case '<':
+            *type = LESS;
+            return 1;
+        case '>':
+            *type = GREATER;
+            return 1;
+        case '(':
+            *type = LPAREN;
+            return 1;
+        case ')':
+            *type = RPAREN;
+            return 1;
+        case '{':
+            *type = LBRACE;
+            return 1;
+        case '}':
+            *type = RBRACE;
+            return 1;
+        case ';':
+            *type = SEMICOLON;
+            return 1;
         default:
             return 0;
     }
@@ -32,8 +63,12 @@ static void advance_position(int c, size_t *line, size_t *column) {
     }
 
     /* TODO: adaptar esta lógica para \r aislado y para la secuencia \r\n. */
+
 }
 
+
+// Se encarga de leer el archivo caracter por caracter, y cuando termina de leer un lexema completo, crea el
+// lexema, y lo imprime en la terminal
 int lexer_scan(FILE *file) {
     size_t line = 1;
     size_t column = 0;

@@ -1,0 +1,16 @@
+# Documentos de trabajo interno (no entregables)
+PlanEjecucion.md
+especifiacionesPractica.md
+
+# Artefactos de compilación
+*.o
+minic
+
+# Configuración de IDE
+.idea/
+
+# Archivos temporales del sistema/editor
+*~
+*.swp
+*.swo
+.DS_Store

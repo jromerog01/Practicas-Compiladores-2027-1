@@ -20,9 +20,9 @@ clean:
 
 test: $(TARGET)
 	@fail=0; \
-	shopt -s nullglob; \
 	for dir in tests/propias tests/public; do \
 		for f in "$$dir"/inputs/*.mc; do \
+			[ -e "$$f" ] || continue; \
 			base=$$(basename "$$f" .mc); \
 			exp="$$dir/expected/$$base.out"; \
 			if [ -f "$$exp" ]; then \

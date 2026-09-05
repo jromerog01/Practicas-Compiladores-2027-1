@@ -10,10 +10,10 @@
 
 ## Integrantes
 
-| Nombre completo                    | Número de cuenta | Correo electrónico        |
-|------------------------------------|------------------|---------------------------|
-| Gael Emiliano Arreguin Salgado     | 321121721        |                           |
-| Jesus Antonio Romero Godoy         | 321144292        | jromerog@ciencias.unam.mx |
+| Nombre completo                    | Número de cuenta | Correo electrónico                 |
+|------------------------------------|------------------|------------------------------------|
+| Gael Emiliano Arreguin Salgado     | 321121721        | emiliano.arreguin@ciencias.unam.mx |
+| Jesus Antonio Romero Godoy         | 321144292        | jromerog@ciencias.unam.mx          |
 
 ## Estructura del proyecto
 

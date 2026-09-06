@@ -10,7 +10,7 @@ Ejemplo:
 ./minic tests/propias/inputs/t06_varios_digitos.mc
 ```
 
-Estas pruebas son independientes de las públicas (`tests/public/`), pensadas para no depender únicamente de los ejemplos ya proporcionados con la práctica (sección 12 de la especificación).
+Estas pruebas son independientes de las públicas (`tests/public/`), pensadas para no depender únicamente de los ejemplos ya proporcionados con la práctica.
 
 ## Casos
 

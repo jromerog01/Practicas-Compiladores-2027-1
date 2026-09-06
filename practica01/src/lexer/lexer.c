@@ -119,7 +119,7 @@ int lexer_scan(FILE *file) {
         TokenType type;
 
         // aqui resolvemos el '\r', para separar mejor las responsabilidades entre funciones,
-        // primero revisamos si el siguiente caracter de '/r' es un '/n', y si lo es, lo consumimos aqui mismo
+        // primero revisamos si el siguiente caracter de '\r' es un '\n', y si lo es, lo consumimos aqui mismo
         if (c == '\r') {
             int next = fgetc(file);
             if (next != '\n' && next != EOF) {

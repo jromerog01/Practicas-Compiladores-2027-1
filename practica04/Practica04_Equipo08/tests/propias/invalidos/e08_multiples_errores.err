@@ -1,0 +1,2 @@
+Error sintactico [1:8]: se esperaba una expresion, pero se encontro ';'.
+Error sintactico [3:0]: se esperaba ';', pero se encontro 'b'.

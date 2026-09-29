@@ -1,0 +1,1 @@
+numero1 total_2026 x9y8z7

@@ -1,0 +1,9 @@
+1:0 PRINT print
+1:6 FALSE false
+1:12 WHILE while
+1:18 IF if
+1:21 BOOL bool
+1:26 TRUE true
+1:31 ELSE else
+1:36 INT int
+1:39 TOKEN_EOF
